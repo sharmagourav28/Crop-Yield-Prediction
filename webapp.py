@@ -25,6 +25,7 @@ from pathlib import Path
 import contact as contact
 import about as about
 import help as help
+from pathlib import Path
 
 
 # command to execute the code
