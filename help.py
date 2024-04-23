@@ -18,6 +18,7 @@ def renderApp():
     design = current_dir / "documents" / "design.pdf"
     vedio = current_dir / "documents" / "vedio.webm"
     css_file = current_dir / "style.css"
+    lastppt = current_dir / "documents" / "lastppt.pptx"
     with open(css_file) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
@@ -41,6 +42,10 @@ def renderApp():
 
     with open(vedio, "rb") as vd:
         majorvedio = vd.read()
+
+    with open(lastppt, "rb") as lp:
+        majorlastppt = lp.read()
+
     col1, col2 = st.columns(2, gap="small")
 
     with col1:
@@ -104,5 +109,13 @@ def renderApp():
             label="📄 Download Vedio",
             data=majorvedio,
             file_name=vedio.name,
+            mime="application/octet-stream",
+        )
+    with col8:
+        st.write("🔴 PROJECT LAST PPT")
+        st.download_button(
+            label="📄 Download Last PPT",
+            data=majorlastppt,
+            file_name=lastppt.name,
             mime="application/octet-stream",
         )
