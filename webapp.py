@@ -1,3 +1,4 @@
+import sklearn
 from sklearn.preprocessing import LabelEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler
