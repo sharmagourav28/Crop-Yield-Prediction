@@ -1,3 +1,4 @@
+import sklearn
 from sklearn.preprocessing import LabelEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler
@@ -9,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
 import numpy as np
-import sklearn
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
