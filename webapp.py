@@ -15,9 +15,17 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+
+# From there, the random forest classifier can be used to solve for regression or classification problems.
 from sklearn.ensemble import GradientBoostingRegressor
+
+# Gradient boosting regression trees are based on the idea of an ensemble method derived from a decision tree.
 from sklearn import svm
+
 from sklearn.tree import DecisionTreeRegressor
+
+# It breaks down a dataset into smaller and smaller subsets
+
 from streamlit_lottie import st_lottie  # pip install streamlit-lottie
 from streamlit_option_menu import option_menu
 import requests  # pip install requests
